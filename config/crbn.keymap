@@ -14,15 +14,15 @@
 
 		default_layer {
 				// -----------------------------------------------------------------------------------------
-				// | TAB   |  Q   |  W   |  F   |  P   |  B   |   J   |  L    |  U   |  Y   |   ;   | BSPC  |
-				// | LCTL  |  A   |  R   |  S   |  T   |  G   |   M   |  N    |  E   |  I   |   O   |  '    |
-				// | SHIFT |  Z   |  X   |  C   |  D   |  V   |   K   |  H    |  ,   |  .   |   /   | ESC/~ |
-				// | PLAY  | LALT | LGUI | LOWR |    SPACE    |      RET      | RAIS |      |       |       |
+				// | ESC/~ |  Q   |  W   |  E   |  R   |  T   |   Y   |  U    |  I   |  O   |   P   | BSPC  |
+				// | TAB   |  A   |  S   |  D   |  F   |  G   |   H   |  J    |  K   |  L   |   ;   |  '    |
+				// | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  ,   |  .   |   /   |RET/SFT|
+				// | PLAY  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | LARW | UARW | DARW  |  RARW |
 			bindings = <
-				&kp TAB    &kp Q    &kp W &kp F &kp R &kp B  &kp J   &kp L  &kp U    &kp Y   &kp SEMI &kp BSPC
-				&kp LCTRL  &kp A    &kp R &kp S &kp T &kp G  &kp M   &kp N  &kp E    &kp I   &kp O    &kp SQT
-				&kp LSHFT  &kp Z    &kp X &kp C &kp D &kp V  &kp K   &kp H  &kp COMMA &kp DOT &kp FSLH &gresc
-				&kp C_PP   &kp LALT &kp LGUI &mo 1 &none &kp SPACE &kp RET &none &mo 2 &none   &none   &none
+				&gresc    &kp Q    &kp W &kp E &kp R &kp T  &kp Y   &kp U  &kp I    &kp O   &kp P    &kp BSPC
+				&kp TAB   &kp A    &kp S &kp D &kp F &kp G  &kp H   &kp J  &kp K    &kp L   &kp SEMI &kp SQT
+				&kp LSHFT &kp Z    &kp X &kp C &kp V &kp B  &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+				&kp C_PP &kp LCTRL &kp LALT &kp LGUI &mo 1 &kp SPACE &kp SPACE &mo 2 &kp LEFT &kp UP &kp DOWN &kp RIGHT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
